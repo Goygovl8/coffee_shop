@@ -1,0 +1,417 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 1440px;
+  background-color: #F5F1E8;
+}
+
+.header_top {
+  width: 100%;
+  height: 40px;
+  background-color: #5B1312;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 5px;
+}
+
+.nav_bar {
+  width: 100%;
+  height: 92px;
+  background-color: #F5F1E8;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #5B1312;
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.site_header {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.site_header > img {
+  width: 64px;
+  height: 55.81px;
+}
+
+.header_actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header_actions > img {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.log_in {
+  width: 97.62px;
+  height: 42.67px;
+  background-color: #5B1312;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+}
+
+.bg img {
+  width: 100%;
+  display: block;
+}
+
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-text .title {
+  color: #F5F1E8;
+  font-size: 110px;
+  letter-spacing: 5px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.bg-text .subtitle {
+  color: #F5F1E8;
+  font-size: 55px;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-top: -10px;
+  font-weight: 500;
+}
+
+.main_content {
+  width: 100%;
+  background-color: #F5F1E8;
+  padding-bottom: 100px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 150px 0 150px;
+}
+
+.partners img {
+  max-height: 35px;
+  width: auto;
+  object-fit: contain;
+}
+
+.section_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 40px;
+  color: #5B1312;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.section_header p {
+  margin: 0 0 15px 0;
+  letter-spacing: 4px;
+}
+
+.section_header img {
+  width: 250px;
+}
+
+.products_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 150px;
+  margin-top: 60px;
+}
+
+.product_card {
+  background-color: #F5F1E8;
+  border: 1px solid #E0D8C8;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_image_wrapper {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product_image_wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product_info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product_name {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #5B1312;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  min-height: 44px;
+}
+
+.product_price_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #5B1312;
+}
+
+.product_price {
+  font-size: 20px;
+}
+
+.product_weight {
+  font-size: 14px;
+  color: #888;
+}
+
+.select_options_btn {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #5B1312;
+  color: #5B1312;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.select_options_btn:hover {
+  background-color: #5B1312;
+  color: #F5F1E8;
+}
+
+.about_section {
+  display: flex;
+  width: 100%;
+  height: 797px;
+  margin-top: 100px;
+}
+
+.cafe_content {
+  background-color: #5B1312;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cafe_header {
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #F5F1E8;
+  letter-spacing: 4px;
+  margin: 0 0 10px 0;
+}
+
+.cafe_underline {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.cafe_description {
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #F5F1E8;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.view_cafes_btn {
+  background-color: transparent;
+  border: 1px solid #F5F1E8;
+  color: #F5F1E8;
+  padding: 12px 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view_cafes_btn:hover {
+  background-color: #F5F1E8;
+  color: #5B1312;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cafe_image {
+  width: 50%;
+  height: 100%;
+}
+
+.cafe_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.features{
+  width: 1442px;
+  height: 715px;
+  background-color: #F5F1E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.journal_banner {
+  width: 1442px;
+}
+
+.journal_content {
+  width: 100%;
+  height: 451px;
+  background-color: #5B1312;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.journal_text_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-size: 68px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.journal_text_block p {
+  margin: 0 0 30px 0;
+  line-height: 1.1;
+}
+
+.view_cafes_btn2 {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view_cafes_btn2:hover {
+  background-color: #F5F1E8;
+  color: #5B1312;
+}
+
+.foto img {
+  height: 100%;
+  max-height: 451px;
+  object-fit: contain;
+  display: block;
+}
+
+.text{
+  font-size: 40px;
+  color: #5B1312;
+  display: flex;
+  justify-content: center;
+  margin-top: 305px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.offerings_grid{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  margin-bottom: 305px;
+}
+
+.brew_guide_header {
+  width: 1442px;
+  height: 875px;
+  background-color: #5B1312;
+  padding-top: 80px; 
+  box-sizing: border-box; 
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  gap: 15px;
+}
+
+.video{
+  width: 1200px;
+  height: 675px;
+  border: none;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
